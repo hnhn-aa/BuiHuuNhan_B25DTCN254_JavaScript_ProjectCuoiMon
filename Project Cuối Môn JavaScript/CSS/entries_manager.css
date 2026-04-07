@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f5f6f8;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  padding: 20px;
+}
+
+.menu {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #D7EDFF;
+  cursor: pointer;
+  text-align: left;
+  color: #0E73F6;
+}
+
+.logout {
+  margin-top: 20px;
+}
+
+.main {
+  flex: 1;
+}
+
+.header {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 602.5985107421875px;
+  height: 66.21356201171875px;
+  opacity: 1;
+  top: 75.45px;
+  left: 881.85px;
+}
+
+.search-box input {
+  border: none;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.btn-add {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #22c55e;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-update {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #22c55e;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+}
+
+.table-section h3 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background: #f3f4f6;
+}
+
+tr {
+  border-bottom: 1px solid #eee;
+}
+
+td a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #3b82f6;
+}
+
+td a.delete {
+  color: red;
+}
+.btn-fix-category {
+  border: none;
+  background-color: #22c55e;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-delete-category {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

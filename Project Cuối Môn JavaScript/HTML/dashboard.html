@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Page</title>
+  <link rel="stylesheet" href="../CSS/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo" id="logo">RIKKEI_EDU_BLOG</div>
+
+        <div class="right">
+    
+            <div class="avatar-box" id="avatarBox">
+            <img src="../assets/images/index/Avatar.jpg" alt="avatar" class="avatar">
+            
+            <div class="dropdown" id="dropdown">
+                <div class="user-info" id="avatar-box">
+                <img src="../assets/images/index/Avatar.jpg" alt="">
+                <div>
+                    <p class="name">Rikkei</p>
+                    <p class="email">rikkei@gmail.com</p>
+                </div>
+                </div>
+
+                <ul>
+                    <li id="view-profile">View profile</li>
+                    <li id="update-profile-picture">Update profile picture</li>
+                    <li id="change-password">Change password</li>
+                    <li class="logout" id="logout">Log out</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+    <section class="recent">
+        <h3>Recent blog posts</h3>
+        <div class="recent-wrapper">
+            <div class="recent-left">
+                <img src="../assets/images/entries_manager/image1.jpg">
+                <span class="date">Date: 2025-02-25</span>
+                <h2>A Productive Day at Work</h2>
+                <p>
+                Today was a really productive day at work. I managed to finish a report ahead of schedule...
+                </p>
+                <span class="tag">Daily Journal</span>
+            </div>
+
+            <div class="recent-right">
+                
+                <div class="recent-item">
+                <img src="../assets/images/entries_manager/image2.2.jpg">
+                <div>
+                    <span class="date">Date: 2025-02-24</span>
+                    <h4>My First Job Interview Experience</h4>
+                    <p>I had my first job interview today! I was nervous at first, but as the conversation went on, I felt more confident. </p>
+                    <span class="tag blue">Work & Career</span>
+                </div>
+                </div>
+
+                <div class="recent-item">
+                <img src="../assets/images/entries_manager/image3.jpg">
+                <div>
+                    <span class="date">Date: 2025-02-23</span>
+                    <h4>Overthinking Everything</h4>
+                    <p>Lately, I have been overthinking everything, from small decisions to bigger life choices.I know I should trust myself</p>
+                    <span class="tag green">Personal Thoughts</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tabs">
+        <span id="all-blog-post">All blog posts</span>
+        <span id="all-my-post">All my posts</span>
+    </div>
+
+    <div class="categories" id="categories">
+        <!-- <span id="daily-journal">Daily Journal</span>
+        <span id="work-career">Work & Career</span>
+        <span id="personal-thoughts">Personal Thoughts</span>
+        <span id="emotions-feelings">Emotions & Feelings</span> -->
+    </div>
+
+    <main class="main">
+        <div class="card-list" id="post-list">
+            <!-- <div class="card">
+                <img src="../assets/images/entries_manager/image1.jpg" alt="">
+                <div>
+                    <p class="date">Date: 2025-02-25</p>
+                    <div class="see-details">
+                        <h2>A Productive Day at Work</h2>
+                        <img src="../assets/icons/arrow-up-right.png" alt="">
+                    </div>
+                    <p class="description">Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
+                    <div class="btn-of-card">
+                        <button class="btn-name-card">Daily Journal</button>
+                        <button class="btn-edit">Edit your post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/entries_manager/image2.jpg" alt="">
+                <div>
+                    <p class="date">Date: 2025-02-24</p>
+                    <div class="see-details">
+                        <h2>My First Job Interview Experience</h2>
+                        <img src="../assets/icons/arrow-up-right.png" alt="">
+                    </div>
+                    <p class="description">I had my first job interview today! I was nervous at first, but as the conversation went on, I felt more confident. </p>
+                    <div class="btn-of-card">
+                        <button class="btn-name-card">Work & Career</button>
+                        <button class="btn-edit">Edit your post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/entries_manager/image3.jpg" alt="">
+                <div>
+                    <p class="date">Date: 2025-02-23</p>
+                    <div class="see-details">
+                        <h2>Overthinking Everything</h2>
+                        <img src="../assets/icons/arrow-up-right.png" alt="">
+                    </div>
+                    <p class="description">Lately, I have been overthinking everything, from small decisions to bigger life choices.I know I should trust myself.</p>
+                    <div class="btn-of-card">
+                        <button class="btn-name-card">Personal Thoughts</button>
+                        <button class="btn-edit">Edit your post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/entries_manager/image4.jpg" alt="">
+                <div>
+                    <p class="date">Date: 2025-02-16</p>
+                    <div class="see-details">
+                        <h2>How collaboration makes us better designers</h2>
+                        <img src="../assets/icons/arrow-up-right.png" alt="">
+                    </div>
+                    <p class="description">Collaboration can make our teams stronger, and our individual designs better.</p>
+                    <div class="btn-of-card">
+                        <button class="btn-name-card">Work & Career</button>
+                        <button class="btn-edit">Edit your post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/entries_manager/image6.jpg" alt="">
+                <div>
+                    <p class="date">Date: 2025-02-05</p>
+                    <div class="see-details">
+                        <h2>Podcast: Creating a better CX Community</h2>
+                        <img src="../assets/icons/arrow-up-right.png" alt="">
+                    </div>
+                    <p class="description">Starting a community doesn’t need to be complicated, but how do you get star?</p>
+                    <div class="btn-of-card">
+                        <button class="btn-name-card">Emotions & Feelings</button>
+                        <button class="btn-edit">Edit your post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/entries_manager/image5.jpg" alt="">
+                <div>
+                    <p class="date">Date: 2025-02-15</p>
+                    <div class="see-details">
+                        <h2>Our top 10 Javascript frameworks to use</h2>
+                        <img src="../assets/icons/arrow-up-right.png" alt="">
+                    </div>
+                    <p class="description">JavaScript frameworks make development easy with extensive features and functionalities.</p>
+                    <div class="btn-of-card">
+                        <button class="btn-name-card">Work & Career</button>
+                        <button class="btn-edit">Edit your post</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+            <div class="pagination">
+                <div class="navigation-page">
+                    <a href="">
+                        <img src="../assets/icons/Icon.png" alt="">Previous
+                </a>
+            </div>
+            <div class="number-page">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>...</button>
+                <button>8</button>
+                <button>9</button>
+                <button>10</button>
+            </div>
+            <div class="navigation-page">
+                <a href="">
+                    Next<img src="../assets/icons/Icon (1).png" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer class="footer">
+        <div class="information-blog">
+            <h3>MY BLOG</h3>
+            <div class="rareblocks">
+                <h4>About Rareblocks</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat ullamcorper amet adipiscing fermentum.</p>
+            </div>
+            <div class="company">
+                <h4>Company</h4>
+                <ul class="list-data">
+                    <li>About</li>
+                    <li>Features </li>
+                    <li>Works</li>
+                    <li>Career</li>
+                </ul class="list-data">
+            </div>
+            <div class="help">
+                <h4>Help</h4>
+                <ul class="list-data">
+                    <li>Customer Support</li>
+                    <li>Delivery Details</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul class="list-data">
+            </div>
+            <div class="resources">
+                <h4>Resources</h4>
+                <ul class="list-data">
+                    <li>Free eBooks</li>
+                    <li>Development Tutorial</li>
+                    <li>How to - Blog</li>
+                    <li>Youtube Playlist</li>
+                </ul class="list-data">
+            </div>
+        </div>
+        <div class="icons">
+            <img src="../assets/icons/1.png" alt="">
+            <img src="../assets/icons/2.png" alt="">
+            <img src="../assets/icons/3.png" alt="">
+            <img src="../assets/icons/4.png" alt="">
+        </div>
+    </footer>
+    <script src="../JavaScript/dashboard.js"></script>
+</body>
+</html>

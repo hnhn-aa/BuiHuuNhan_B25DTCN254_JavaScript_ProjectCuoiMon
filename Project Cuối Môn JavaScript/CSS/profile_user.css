@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+}
+
+.logo {
+    font-weight: bold;
+}
+.logo:hover {
+    cursor: pointer;
+    color: rgb(185,34,40);
+}
+
+.right {
+    position: relative;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 230px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    overflow: hidden;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.user-info {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.email {
+    font-size: 12px;
+    color: gray;
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown ul li {
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dropdown ul li:hover {
+    background: #f0f0f0;
+}
+
+.logout {
+    border-top: 1px solid #eee;
+    color: red;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.footer h3 {
+    color: #18181B;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+}
+.information-blog {
+    display: flex;
+    justify-content: space-between;
+}
+.rareblocks {
+    width: 20%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #52525B;
+}
+.company {
+    width: 13%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #18181B;
+}
+.list-data {
+    list-style-type: none;
+}
+.help {
+    width: 13%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #18181B;
+}
+.resources {
+    width: 13%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #18181B;
+}
+.icons {
+    display: flex;
+    gap: 30px;
+    width: 150px;
+}
+.icons img {
+    width: 14,5px;
+    height: 12px;
+}
+.see-details button {
+    border: none;
+    background-color: #f5f6f8;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entries Manager</title>
+    <link rel="stylesheet" href="../CSS/entries_manager.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="layout">
+
+        <div class="sidebar">
+            <button class="menu" id="manager-user">🧑 Manage Users</button>
+            <button class="menu" id="manager-entries">📄 Manage Entries</button>
+            <button class="menu active" id="manager-articles">📘 Manage Articles</button>
+            <button class="menu logout" id="logout">🚪 Log out</button>
+        </div>
+
+        <div class="main">
+
+            <div class="header">
+
+            <div class="header-right">
+                <span class="icon">✉️ 🔔</span>
+                <img src="../assets/images/user-manager/avatar.png" class="avatar">
+            </div>
+            </div>
+
+            <div class="content">
+                <div class="search-box">
+                    🔍 <input type="text" placeholder="Search Article Categories">
+                </div>
+
+                <h2>📂 Manage Categories</h2>
+
+                <div class="form">
+                    <label>Category Name:</label>
+                    <input type="text" placeholder="Enter category name" id="input-add">
+                    <button class="btn-add" id="add-category">Add Category</button>
+                    <button class="btn-update" id="update-category">Update Category</button>
+                </div>
+
+                <div class="table-section">
+                    <h3>📋 Category List</h3>
+
+                    <table>
+                    <thead>
+                        <tr>
+                        <th>#</th>
+                        <th>Category Name</th>
+                        <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../JavaScript/entries_manager.js"></script>
+</body>
+</html>
