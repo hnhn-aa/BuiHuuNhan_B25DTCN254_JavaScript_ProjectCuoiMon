@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+}
+
+.logo {
+    font-weight: bold;
+}
+.logo:hover {
+    cursor: pointer;
+    color: rgb(185,34,40);
+}
+
+.right {
+    position: relative;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 230px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    overflow: hidden;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.user-info {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.email {
+    font-size: 12px;
+    color: gray;
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown ul li {
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dropdown ul li:hover {
+    background: #f0f0f0;
+}
+
+.logout {
+    border-top: 1px solid #eee;
+    color: red;
+}
+
+.container {
+  padding: 30px 60px;
+}
+
+.recent h3 {
+  margin-bottom: 15px;
+}
+
+.recent-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.recent-left {
+  flex: 1;
+}
+
+.recent-left img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.recent-left h2 {
+  margin: 10px 0;
+}
+.recent-left p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #667085;
+}
+
+.recent-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.recent-right p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #667085;
+}
+
+.recent-item {
+  display: flex;
+  gap: 10px;
+}
+
+.recent-item img {
+  width: 50%;
+  border-radius: 6px;
+}
+
+.date {
+  font-size: 12px;
+  color: #7c3aed;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #eee;
+  border-radius: 6px;
+}
+
+.tag.blue {
+  background: #dbeafe;
+}
+
+.tag.green {
+  background: #dcfce7;
+}
+
+.tag.purple {
+  background: #ede9fe;
+}
+
+.tabs {
+  margin: 30px 0 10px;
+}
+
+.tabs span {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #555;
+  cursor: pointer;
+}
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.categories span {
+  margin-right: 15px;
+  color: #555;
+  cursor: pointer;
+}
+
+.main {
+    padding: 20px;
+}
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: calc(33.33% - 14px); 
+}
+.card img {
+    width: 100%;
+}
+.date {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #6155F5;
+}
+.see-details {
+    display: flex;
+    justify-content: space-between;
+}
+.see-details h2 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #101828;
+}
+.see-details img {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+}
+.description {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #667085;
+}
+.btn-of-card {
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%; 
+}
+.btn-name-card {
+    width: 100%px;
+    height: 24px;
+    border-radius: 16px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    opacity: 1;
+    display: inline-block;
+    background-color: #F9F5FF;
+    border: none;
+}
+.btn-edit {
+    width: 113px;
+    height: 24px;
+    border-radius: 16px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    opacity: 1;
+    background-color: #F9F5FF;
+    border: none;
+    color: #FF2D55;
+}
+.pagination {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #667085;
+    display: flex;
+    justify-content: space-between;
+    width: 557px;
+    height: 102px;
+    margin: auto;
+    align-items: center;
+}
+.navigation-page {
+    display: flex;
+}
+.navigation-page a {
+    text-decoration: none;
+    color: #667085;
+}
+.number-page button{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    opacity: 1;
+    border: none;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #667085;
+}
+hr {
+    border: 0.5px solid #E4E4E7;
+    margin: 20px;
+}
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.footer h3 {
+    color: #18181B;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+}
+.information-blog {
+    display: flex;
+    justify-content: space-between;
+}
+.rareblocks {
+    width: 20%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #52525B;
+}
+.company {
+    width: 13%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #18181B;
+}
+.list-data {
+    list-style-type: none;
+}
+.help {
+    width: 13%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #18181B;
+}
+.resources {
+    width: 13%;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #18181B;
+}
+.icons {
+    display: flex;
+    gap: 30px;
+    width: 150px;
+}
+.icons img {
+    width: 14,5px;
+    height: 12px;
+}
+.see-details button {
+    border: none;
+    background-color: #f5f6f8;
+    cursor: pointer;
+}

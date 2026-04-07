@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Manager</title>
+    <link rel="stylesheet" href="../CSS/user_manager.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="layout">
+
+    <div class="sidebar">
+        <button class="menu active" id="manager-user">🧑 Manage Users</button>
+        <button class="menu" id="manager-entries">📄 Manage Entries</button>
+        <button class="menu" id="manager-articles">📘 Manage Articles</button>
+        <button class="menu logout" id="logout">🚪 Log out</button>
+    </div>
+
+    <div class="main">
+
+        <div class="header" id="header">
+        
+        </div>
+
+        <div class="content">
+
+        <div class="top-bar">
+            <div class="team">
+            Team members <span>100 users</span>
+            </div>
+
+            <div class="search">
+            🔍 <input type="text" placeholder="Search user">
+            </div>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    Name
+                    <select id="sort-name">
+                        <option value="none">Sắp xếp</option>
+                        <option value="asc">A → Z</option>
+                        <option value="desc">Z → A</option>
+                    </select>
+                </th>
+                <th>Status ↓</th>
+                <th>Email address</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+
+            <tbody id="user-list">
+            
+            </tbody>
+        </table>
+<button class="btn-add-article"></button>
+        <div class="pagination">
+            <button>← Previous</button>
+
+            <div class="pages">
+               
+            </div>
+
+            <button>Next →</button>
+        </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="../JavaScript/user_manager.js"></script>
+</body>
+</html>

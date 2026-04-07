@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Manager</title>
+    <link rel="stylesheet" href="../CSS/article-manager.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body id="totalProgram">
+    <div class="layout" id="layout">
+
+        <div class="sidebar">
+            <button class="menu" id="manager-user">🧑 Manage Users</button>
+            <button class="menu" id="manager-entries">📄 Manage Entries</button>
+            <button class="menu active" id="manager-articles">📘 Manage Articles</button>
+            <button class="menu logout" id="logout">🚪 Log out</button>
+        </div>
+        
+        <div class="main" id="main">
+            
+            <div class="header" id="header">
+               
+            </div>
+            
+            <div class="content">
+                
+                <h2>Quản lý bài viết</h2>
+                
+                <button class="btn-add" id="btnAdd">Thêm mới bài viết</button>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ảnh</th>
+                            <th>Tiêu đề</th>
+                            <th>Chủ đề</th>
+                            <th>Nội dung</th>
+                            <th>Trạng thái</th>
+                            <th>Chỉnh sửa trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="article-list">
+                        
+                    </tbody>
+                </table>
+                
+                <div class="pagination">
+                    <button>← Previous</button>
+                    
+                    <div class="pages">
+                       
+                    </div>
+                    
+                    <button>Next →</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="modal">
+
+            <div class="header">
+                <h2 id="Title">📝 Add New Article</h2>
+                <span class="close-btn" id="btnClose">✖</span>
+            </div>
+            
+            <form class="form" id="articleForm">
+                
+                <div class="form-group">
+                    <label>Title:</label>
+                    <input type="text" id="title">
+                    <small class="error"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label>Article Categories:</label>
+                    <select id="entries">
+                        
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Mood:</label>
+                    <select id="mood">
+                        <option value="🙂 Happy">🙂 Happy</option>
+                        <option value="😢 Sad">😢 Sad</option>
+                        <option value="😡 Angry">😡 Angry</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Content:</label>
+                    <textarea rows="5" id="content"></textarea>
+                    <small class="error"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label>Status:</label>
+                    <div class="status" id="status">
+                        <label><input type="radio" name="status" value="public"> Public</label>
+                        <label><input type="radio" name="status" value="private"> Private</label>
+                    </div>
+                </div>
+                
+                <div class="upload">
+                    <div class="upload-box">
+                        <input type="file" class="file" id="file" >
+                        <p>⬆️ <br>Browse and choose the files you want to upload from your computer</p>
+                    </div>
+                </div>
+                
+                <button class="btn-add1" id="btn-add-article">Add</button>
+                <button class="btn-add1" id="btn-update-article">Update</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="../JavaScript/article_manager.js"></script>
+</body>
+</html>
